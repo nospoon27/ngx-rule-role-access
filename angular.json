@@ -3,38 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-rbac": {
+    "ngx-rule-role-access": {
       "projectType": "library",
-      "root": "projects/ngx-rbac",
-      "sourceRoot": "projects/ngx-rbac/src",
+      "root": "projects/ngx-rule-role-access",
+      "sourceRoot": "projects/ngx-rule-role-access/src",
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ngx-rbac/tsconfig.lib.json",
-            "project": "projects/ngx-rbac/ng-package.json"
+            "tsConfig": "projects/ngx-rule-role-access/tsconfig.lib.json",
+            "project": "projects/ngx-rule-role-access/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-rbac/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-rule-role-access/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-rbac/src/test.ts",
-            "tsConfig": "projects/ngx-rbac/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-rbac/karma.conf.js"
+            "main": "projects/ngx-rule-role-access/src/test.ts",
+            "tsConfig": "projects/ngx-rule-role-access/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-rule-role-access/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngx-rbac/tsconfig.lib.json",
-              "projects/ngx-rbac/tsconfig.spec.json"
+              "projects/ngx-rule-role-access/tsconfig.lib.json",
+              "projects/ngx-rule-role-access/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -106,18 +106,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "demo-ngx-rbac:build"
+            "buildTarget": "demo-ngx-rbac:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "demo-ngx-rbac:build:production"
+              "buildTarget": "demo-ngx-rbac:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "demo-ngx-rbac:build"
+            "buildTarget": "demo-ngx-rbac:build"
           }
         },
         "test": {
@@ -227,18 +227,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "demo:build"
+            "buildTarget": "demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "demo:build:production"
+              "buildTarget": "demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "demo:build"
+            "buildTarget": "demo:build"
           }
         },
         "test": {
@@ -287,6 +287,5 @@
     }},
   "cli": {
     "analytics": false
-  },
-  "defaultProject": "ngx-rbac"
+  }
 }

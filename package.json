@@ -7,11 +7,11 @@
     "start-demo": "ng serve demo",
     "install-nested": "npm install --scripts-prepend-node-path=auto",
     "build": "ng build",
-    "build-lib": "ng build ngx-rbac --prod",
+    "build-lib": "ng build ngx-rule-role-access",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "compodoc": "npx compodoc -p projects/ngx-rbac/tsconfig.lib.json projects/ngx-rbac/src"
+    "compodoc": "npx compodoc -p projects/ngx-rule-role-access/tsconfig.lib.json projects/ngx-rule-role-access/src"
   },
   "private": true,
   "dependencies": {

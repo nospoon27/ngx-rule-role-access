@@ -10,6 +10,13 @@ import { commonCan } from '../helper/common-can';
 
 @Injectable()
 export class DoProvideRulesService implements OnDestroy {
+  
+  private _globalRulesService: DoGlobalRulesService = null
+
+  constructor(private globalRulesService: DoGlobalRulesService) {
+    this._globalRulesService = globalRulesService;
+  }
+
   private destroy$ = new Subject<void>();
 
   /** Rules getters */
@@ -83,7 +90,7 @@ export class DoProvideRulesService implements OnDestroy {
     this.permitted$,
     this.rules$,
     this.roles$,
-    this.globalRulesService.changes$,
+    this._globalRulesService.changes$,
   ]).pipe(
     takeUntil(this.destroy$),
     map(([permissions, localRules, localRoles, { globalRules, roles }]) => ({
@@ -104,7 +111,6 @@ export class DoProvideRulesService implements OnDestroy {
     }))
   );
 
-  constructor(private globalRulesService: DoGlobalRulesService) {}
 
   can(ruleName: string, args?: any[]): any {
     return commonCan(

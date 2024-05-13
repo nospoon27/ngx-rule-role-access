@@ -10,10 +10,10 @@
     "module": "esnext",
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
-    "lib": ["es2018", "dom"],
+    "target": "ES2022",
+    "lib": ["ES2022", "dom"],
     "paths": {
-      "@doce/ngx-rbac": ["projects/ngx-rbac/src/public-api"],
+      "@doce/ngx-rbac": ["projects/ngx-rule-role-access/src/public-api"],
       "ngx-rbac": ["dist/ngx-rbac/ngx-rbac", "dist/ngx-rbac"]
     }
   },

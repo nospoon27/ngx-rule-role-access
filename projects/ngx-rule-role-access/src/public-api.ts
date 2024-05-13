@@ -3,6 +3,7 @@ export { DoDebugComponent } from './lib/component/do-debug.component';
 export { DoCanGuard } from './lib/guard/do-can.guard';
 export { doAnd, doOr, doNot } from './lib/helper/logic-operator';
 export { DoCanPipe } from './lib/pipe/do-can.pipe';
+export { DoDebugPipe } from './lib/pipe/do-debug.pipe';
 export { DoGlobalRulesService } from './lib/service/do-global-rules.service';
 export { DoProvideRulesService } from './lib/service/do-provide-rules.service';
 export { DoNgxRbacModule } from './lib/do-ngx-rbac.module';
