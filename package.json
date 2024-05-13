@@ -59,17 +59,17 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/docentovich/ngx-rbac.git"
+    "url": "git+https://github.com/nospoon27/ngx-rule-role-access.git"
   },
   "author": "Andrey Prozorov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/docentovich/ngx-rbac/issues"
+    "url": "https://github.com/nospoon27/ngx-rule-role-access.git/issues"
   },
   "keywords": [
     "rbac",
     "permission system",
     "access control"
   ],
-  "homepage": "https://github.com/docentovich/ngx-rbac#readme"
+  "homepage": "https://github.com/nospoon27/ngx-rule-role-access.git#readme"
 }

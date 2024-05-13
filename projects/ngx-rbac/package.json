@@ -2,9 +2,11 @@
   "name": "@doce/ngx-rbac",
   "version": "1.0.2",
   "peerDependencies": {
-    "@angular/common": "^9.0.7",
-    "@angular/core": "^9.0.7",
-    "tslib": "^1.10.0"
+    "@angular/common": "^17.3.8",
+    "@angular/core": "^17.3.8"
+  },
+  "dependencies": {
+    "tslib": "^2.6.2"
   },
   "description": "This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.",
   "main": "karma.conf.js",
@@ -20,10 +22,10 @@
     "access",
     "access-control"
   ],
-  "author": "Andrey Prozorov (mailto:docentovich@gmila.com)",
+  "author": "Andrey Prozorov (mailto:docentovich@gmila.com) | Dim Zinnatov (mailto:nospoon27@yandex.ru)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/docentovich/ngx-rbac/issues"
+    "url": "https://github.com/nospoon27/ngx-rule-role-access.git/issues"
   },
-  "homepage": "https://github.com/docentovich/ngx-rbac#readme"
+  "homepage": "https://github.com/nospoon27/ngx-rule-role-access.git#readme"
 }
