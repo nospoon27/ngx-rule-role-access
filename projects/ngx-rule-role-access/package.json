@@ -1,6 +1,6 @@
 {
-  "name": "@doce/ngx-rbac",
-  "version": "1.0.2",
+  "name": "@iac-mchs/ngx-rule-role-access",
+  "version": "0.0.0",
   "peerDependencies": {
     "@angular/common": "^17.3.8",
     "@angular/core": "^17.3.8"
